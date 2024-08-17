@@ -7,7 +7,7 @@ const otpRouter = require('./router/router');
 dotenv.config(); 
 
 const app = express();
-
+app.use(cors());
 app.use(cors({
   origin:'https://arjexitexam.vercel.app/'
 }));
